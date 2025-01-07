@@ -1,0 +1,79 @@
+### IntelliJ IDEA ###
+/.idea/
+/out/
+*.iml
+
+# Exclude build directories
+/build/
+/target/
+
+### Mac OS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Exclude resource forks automatically created by macOS
+._*
+
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Compiled Java classes
+
+
+### Maven ###
+/.mvn/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+### Gradle ###
+.gradle/
+/*.gradle
+.gradle-cache/
+
+### Eclipse (if you ever use it) ###
+.classpath
+.project
+.settings/
+bin/
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+.nbm/
+
+### VS Code ###
+.vscode/
+
+### Global JetBrains ###
+# Exclude JetBrains IDE temp files
+.idea_modules/
+workspace.xml
+tasks.xml
+
+### Additional Files ###
+# Ignore IntelliJ-run configurations
+/.run/
+
+# Ignore Java linting/analysis reports
+/checkstyle/
+/pmd/
+/spotbugs/
+
+# Ignore backups made by editors
+*~
