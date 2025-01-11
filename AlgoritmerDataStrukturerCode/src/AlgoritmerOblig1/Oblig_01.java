@@ -36,10 +36,52 @@ public class Oblig_01 {
         String T = "";
 
         while (!stack.isEmpty() || !queue.isEmpty()) {
-            if (!stack.isEmpty()) T += stack.pop();
-            if (!queue.isEmpty()) T += queue.poll();
+            T += stack.pop();
+            T += queue.poll();  //
         }
         return T;
+    }
+
+    public static String dekrypter(String S) {
+
+        String T = "";
+
+        Queue<Character> queue = new LinkedList<>();
+        Stack<Character> stack = new Stack<>();
+
+        for (int i = 0; i < S.length(); i++) {
+            if (i % 2 != 0) {
+                queue.add(S.charAt(i));
+            }
+            if (i % 2 == 0) {
+                stack.push(S.charAt(i));
+            }
+        }
+
+        System.out.println("Queue: " + queue);
+        System.out.println("Stack: " + stack);
+
+        while (!queue.isEmpty()) {
+            T += queue.poll();
+        }
+        while (!stack.isEmpty()) {
+            T += stack.pop();
+        }
+
+        T = ROT13(T);
+        return T;
+    }
+
+    public static void main(String[] args) {
+
+        String input = "Karmann-Ghia";
+        System.out.println("NOn-encrypted: " + input);
+
+        String encrypted = krypter(input);
+        System.out.println("Encrypted: " + encrypted);
+
+        String decrypted = dekrypter(encrypted);
+        System.out.println("Decrypted " + decrypted);
     }
 
 }
