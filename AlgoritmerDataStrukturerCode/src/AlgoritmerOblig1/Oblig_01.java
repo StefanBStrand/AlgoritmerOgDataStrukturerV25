@@ -58,6 +58,7 @@ public class Oblig_01 {
             }
         }
 
+        // Just a check tthat things are done right.
         System.out.println("Queue: " + queue);
         System.out.println("Stack: " + stack);
 
