@@ -58,9 +58,15 @@ class Oblig_2
     }
 
     public static void kombinatorisk(long n) {
+
         long nFactorial = 1;
         for (long i = 2; i <= n; i++) {
             nFactorial *= i;
+        }
+
+        int tmp = 1;
+        for (long j = 0; j < nFactorial; j++) {
+            tmp *= 1;
         }
     }
 
