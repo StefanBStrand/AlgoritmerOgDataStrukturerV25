@@ -106,7 +106,7 @@ class Oblig_2
                 kombinatorisk(n);
                 break;
             default:
-                System.out.println("Invalid choice! Please enter a number between 1 and 7.");
+                System.out.println("Invalid choice: enter a number between 1 and 7.");
                 break;
         }
 
