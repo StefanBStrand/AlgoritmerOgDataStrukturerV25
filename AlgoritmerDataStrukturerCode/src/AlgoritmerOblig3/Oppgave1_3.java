@@ -20,9 +20,5 @@ public class Oppgave1_3 {
             C_rekursiv(n, i);
             System.out.println("C(" + n + ", " + i +") = " + C_rekursiv(n, i));
         }
-
     }
-
-
-
 }
