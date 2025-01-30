@@ -24,9 +24,13 @@ public class Oppgave5_6 {
         int n = scanner.nextInt();
         scanner.close();
 
+        long startTime = System.currentTimeMillis();
+
         for (int i = 0; i <= n; i++) {
             C_iterativ(n, i);
             System.out.println("C(" + n + ", " + i +") = " + C_iterativ(n, i));
         }
+        long endTime = System.currentTimeMillis();
+        System.out.println("Execution time: " + (endTime - startTime) + " milliseconds");
     }
 }
